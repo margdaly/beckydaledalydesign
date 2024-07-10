@@ -179,15 +179,76 @@ button:hover {
 }
 
 .side-header {
-  font: bold;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 48px; 
   text-align: center;
+  color: black; /* Added for consistency */
 }
 
-.bio-text {
+.bio-section {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
-  font: italic;
-  font-size: 20px;
+  padding: 40px; /* Increased padding */
+  color: #333;
+}
+
+.bio-section h4 {
+  font-size: 24px; /* Decreased from 28px */
+  margin-bottom: 20px;
+  color: black;
+  font-weight: normal; /* Changed from default bold */
+}
+
+.bio-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px; /* Added space between list items */
+}
+
+.bio-section ul li {
+  margin-bottom: 20px; /* Increased space between list items */
+}
+
+.bio-section ul ul {
+  margin-top: 15px;
+}
+
+.bio-section p {
+  font-style: italic;
+  margin-top: 30px; /* Increased margin */
+  font-size: 24px; /* Increased font size */
+  color: black;
+  font-weight: bold; /* Made bolder */
+}
+
+.known-for {
+  text-align: left; /* Align content to the left */
+  padding-left: 20px; /* Added left padding */
+}
+
+.known-for > span {
+  font-weight: bold;
+  color: black;
+  display: block; /* Make it a block element */
+  margin-bottom: 10px; /* Add space below */
+}
+
+.known-for ul {
+  margin-top: 10px;
+  padding-left: 20px; /* Indent the list */
+}
+
+.known-for ul li {
+  margin-bottom: 10px;
+}
+
+.known-for ul li:before {
+  content: "•";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 /* Footer */
@@ -249,13 +310,15 @@ button:hover {
           <img src="/assets/images/avatar.jpg" alt="Avatar" class="avatar"><br>
         </div>
       </div>
-      <section id="bio-content">
+      <div class="bio-section">
         <h4>A Southern Girl in the LA World</h4>
+      
         <ul>
-          <li>15 years experience in interior and exterior design</li>
-          <li>Specializing in remodels and new construction</li>
-          <li>Expert in project coordination and management</li>
-          <li>Known for:
+          <li>15 years experience in interior and exterior design
+            <br>Specializing in remodels and new construction
+            <br>Expert in project coordination and management</li>
+          <li class="known-for">
+            <span>Known for:</span>
             <ul>
               <li>Superior customer service</li>
               <li>Effective communication</li>
@@ -264,8 +327,9 @@ button:hover {
           </li>
           <li>Dedicated to building strong client relationships and understanding unique needs</li>
         </ul>
+      
         <p>Bringing Happiness, Joy, and Beauty to You!</p>
-      </section>
+      </div>
     </section>
     <section id="contact">
       <div class="contact-section">
