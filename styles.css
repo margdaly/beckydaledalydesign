@@ -168,6 +168,23 @@ button:hover {
   align-items: center;
 }
 
+.logo-container {
+  width: 100%;
+  /* max-width: 200px;  */
+  margin: 0 auto 20px; /* Center horizontally and add space below */
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .side-header {
   font-weight: bold;
   font-size: 48px; 
