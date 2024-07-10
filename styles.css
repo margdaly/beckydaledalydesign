@@ -1,0 +1,268 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Instagram icon styles */
+.instagram-icon {
+  float: left;
+}
+
+.instagram-icon a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-icon i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Change color on hover for Instagram link */
+.instagram-icon a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#contact {
+  padding-top: 20px;
+}
+
+/* CONTACT-FORM */
+.contact-form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #4397f1;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.avatar {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 50%; to make it a circle */
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-header {
+  font-weight: bold;
+  font-size: 48px; 
+  text-align: center;
+  color: black; /* Added for consistency */
+}
+
+.bio-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px; /* Increased padding */
+  color: #333;
+}
+
+.bio-section h4 {
+  font-size: 24px; /* Decreased from 28px */
+  margin-bottom: 20px;
+  color: black;
+  font-weight: normal; /* Changed from default bold */
+}
+
+.bio-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px; /* Added space between list items */
+}
+
+.bio-section ul li {
+  margin-bottom: 20px; /* Increased space between list items */
+}
+
+.bio-section ul ul {
+  margin-top: 15px;
+}
+
+.bio-section p {
+  font-style: italic;
+  margin-top: 30px; /* Increased margin */
+  font-size: 24px; /* Increased font size */
+  color: black;
+  font-weight: bold; /* Made bolder */
+}
+
+.known-for {
+  text-align: left; /* Align content to the left */
+  padding-left: 20px; /* Added left padding */
+}
+
+.known-for > span {
+  font-weight: bold;
+  color: black;
+  display: block; /* Make it a block element */
+  margin-bottom: 10px; /* Add space below */
+}
+
+.known-for ul {
+  margin-top: 10px;
+  padding-left: 20px; /* Indent the list */
+}
+
+.known-for ul li {
+  margin-bottom: 10px;
+}
+
+.known-for ul li:before {
+  content: "•";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+
+  .avatar-container {
+    padding: 10px;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
